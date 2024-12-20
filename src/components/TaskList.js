@@ -1,4 +1,3 @@
-// src/components/TaskList.js
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTaskCompletion, toggleTaskImportance, removeTask } from '../features/TaskSlice';
@@ -23,7 +22,6 @@ const TaskList = ({ darkMode, isGridView  }) => {
 
   return (
     <div className="task-list">
-      {/* Non-Completed Tasks */}
       <div className={`row ${isGridView ? 'g-4' : ''}`}>
         {notCompletedTasks.map((task) => (
           <div
@@ -32,7 +30,6 @@ const TaskList = ({ darkMode, isGridView  }) => {
             style={{ cursor: 'pointer' }}
             onClick={() => handleTaskClick(task)}
           >
-            {/* Task Card (Only in Grid View) */}
             <div className={`d-flex align-items-center w-100 ${darkMode ? 'bg-dark text-white' : ''}`}>
               <input
                 type="checkbox"
@@ -58,10 +55,8 @@ const TaskList = ({ darkMode, isGridView  }) => {
         ))}
       </div>
 
-      {/* Completed Label */}
       {completedTasks.length > 0 && <h5 className="mt-4">Completed</h5>}
 
-      {/* Completed Tasks */}
       {completedTasks.map((task) => (
         <div
           key={task.id}
@@ -94,8 +89,6 @@ const TaskList = ({ darkMode, isGridView  }) => {
           </button>
         </div>
       ))}
-
-      {/* Sidebar */}
       {selectedTask && (
         <Sidebar
           task={selectedTask}

@@ -1,4 +1,3 @@
-// src/components/Navbar.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,9 +24,9 @@ const Navbar = ({ toggleSidebar }) => {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onClick={toggleSidebar} // Toggle sidebar when hamburger is clicked
+          onClick={toggleSidebar}
         >
-          <span className="navbar-toggler-icon"></span> {/* Hamburger icon */}
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="navbar-brand">
           <img src={logo} alt="Logo" height="30" />

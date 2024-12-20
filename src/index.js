@@ -1,4 +1,3 @@
-// src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -12,8 +11,6 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
-// Apply dark mode to the body element
 const darkMode = store.getState().mode.darkMode;
 if (darkMode) {
   document.body.classList.add('dark-mode');
