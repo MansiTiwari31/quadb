@@ -12,13 +12,13 @@ const LeftSidebar = ({ darkMode, isSidebarOpen }) => {
         transition: 'width 0.3s ease',
         height: '100vh',
         position: 'fixed',
-        top: '50px', // Adjust so the sidebar starts below the navbar
+        top: '50px', 
         left: 0,
         zIndex: 1000,
       }}
     >
       <div className="p-3">
-        {/* Profile Section */}
+       
         <div className="text-center mb-4">
           <img
             src="https://via.placeholder.com/60" // Placeholder image URL
