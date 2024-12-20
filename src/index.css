@@ -1,0 +1,54 @@
+/* src/index.css or App.css */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+/* src/App.css or src/index.css */
+.task-row {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task-row .task-completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-row .task-row span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.task-row {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa; /* Light background for better visibility */
+}
+
+.task-row .task-completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-row:hover {
+  background-color: #e9ecef; /* Slightly darker background on hover */
+}
+/* Placeholder color for input */
+input::placeholder {
+  color: black; /* Default color for placeholder text */
+}
+
+input.bg-dark::placeholder {
+  color: white; /* Placeholder text in white in dark mode */
+}

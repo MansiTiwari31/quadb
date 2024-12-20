@@ -1,0 +1,44 @@
+/* src/index.css or src/App.css */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Default light mode */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .navbar {
+  background-color: #333;
+  color: white;
+}
+
+.light-mode .navbar {
+  background-color: #f8f9fa;
+  
+}
+
+/* Example container styles */
+.container {
+  padding: 20px;
+}
+/* Placeholder color for input */
+input::placeholder {
+  color: black; /* Default color for placeholder text */
+}
+
+input.bg-dark::placeholder {
+  color: white; /* Placeholder text in white in dark mode */
+}

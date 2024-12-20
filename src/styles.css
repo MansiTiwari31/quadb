@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app {
+    text-align: center;
+    margin: 40px;
+  }
+  
+  .task-input {
+    margin-bottom: 20px;
+  }
+  
+  .task-list .task-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .modal-content {
+    text-align: left;
+  }
+  
+  .modal button {
+    margin-right: 10px;
+  }
+  
